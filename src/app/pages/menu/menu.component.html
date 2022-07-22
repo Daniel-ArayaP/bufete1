@@ -1,0 +1,22 @@
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+
+        <div class="col-lg-4" *ngFor="let fd of servicesData">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{fd.servicesImg}}">
+                <h1>{{fd.servicesName}}</h1>
+                <p>{{fd.servicesDetails}}</p>
+                <p>{{fd.servicesPrice | currency:'INR'}}</p>
+                <br/>
+                <a class="buybtn" [routerLink]="['/menu',fd.id]"> Telefono : +506 88784818 &nbsp;<i class="bi bi-bag"></i></a>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
